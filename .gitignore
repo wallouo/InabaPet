@@ -1,0 +1,29 @@
+# Environment and secrets
+.env
+*.env
+.env.*
+clawdbot.dev.json
+openclaw.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Screenshots and logs
+screenshot_*.png
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
