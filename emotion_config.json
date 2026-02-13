@@ -1,0 +1,67 @@
+{
+  "version": "1.0",
+  "description": "因幡巡表情情緒映射配置 - 通用於所有身體姿勢",
+  
+  "face_emotions": {
+    "1709": {
+      "emotion": "happy",
+      "intensity": "medium",
+      "tags": ["eyes_closed", "smile", "cheerful"],
+      "description": "閉眼微笑"
+    },
+    "1712": {
+      "emotion": "neutral",
+      "intensity": "low",
+      "tags": ["base", "smile", "default"],
+      "description": "標準微笑（基礎表情）"
+    },
+    "1727": {
+      "emotion": "angry",
+      "intensity": "low",
+      "tags": ["dissatisfied", "frown", "unhappy"],
+      "description": "嘴角向下的不滿"
+    },
+    "1733": {
+      "emotion": "sad",
+      "intensity": "medium",
+      "tags": ["sad", "down", "depressed"],
+      "description": "難過"
+    },
+    "1739": {
+      "emotion": "angry",
+      "intensity": "high",
+      "tags": ["angry", "upset", "mad"],
+      "description": "生氣"
+    },
+    "1762": {
+      "emotion": "tired",
+      "intensity": "medium",
+      "tags": ["sighing", "exhausted", "weary"],
+      "description": "嘆氣"
+    },
+    "1798": {
+      "emotion": "happy",
+      "intensity": "high",
+      "tags": ["cheerful", "joyful", "delighted"],
+      "description": "開心"
+    },
+    "1799": {
+      "emotion": "sad",
+      "intensity": "high",
+      "tags": ["dejected", "lost", "disappointed"],
+      "description": "失落"
+    }
+  },
+  
+  "emotion_categories": {
+    "happy": ["1709", "1798"],
+    "neutral": ["1712"],
+    "angry": ["1727", "1739"],
+    "sad": ["1733", "1799"],
+    "tired": ["1762"]
+  },
+  
+  "body_ids": ["1438", "1442", "1444", "1445", "1446"],
+  "default_body": "1445",
+  "default_face": "1712"
+}
