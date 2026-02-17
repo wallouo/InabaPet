@@ -111,20 +111,25 @@ class SubtitleWindow(QtWidgets.QLabel):
         subtitle_w = self.width()
         subtitle_h = self.height()
         
-        # 放在寵物正下方
-        x = pet_x + (pet_w - subtitle_w) // 2
-        y = pet_y + pet_h - subtitle_h - 100  # 往上偏移 100px
+        # 獲取屏幕信息
+        screen = QtWidgets.QApplication.primaryScreen().availableGeometry()
         
-        # 確保不超出螢幕
-        screen = QtWidgets.QApplication.primaryScreen().geometry()
+        # X 軸：水平居中對齊寵物
+        x = pet_x + (pet_w - subtitle_w) // 2
+        
+        # Y 軸：直接從屏幕底部往上偏移（調整此數值控制高度）
+        offset_from_bottom = 150  # 距離屏幕底部的像素數（改這個值！）
+        y = screen.height() - subtitle_h - offset_from_bottom
+        
+        # 確保不超出螢幕左右邊界
         if x < 0:
             x = 10
         if x + subtitle_w > screen.width():
             x = screen.width() - subtitle_w - 10
+        
+        # 確保不超出螢幕上邊界
         if y < 0:
             y = 10
-        if y + subtitle_h > screen.height():
-            y = screen.height() - subtitle_h - 10
         
         self.setGeometry(x, y, subtitle_w, subtitle_h)
         self.show()
@@ -282,7 +287,7 @@ class PetWindow(QtWidgets.QLabel):
             resp = requests.post(
                 f"{API_URL}/chat_process",
                 json={"text": text, "user_id": "master"},
-                timeout=15
+                timeout=60
             )
             resp.raise_for_status()
             data = resp.json()
@@ -347,7 +352,17 @@ class PetWindow(QtWidgets.QLabel):
         quit_action = menu.addAction("退出 (Exit)")
         quit_action.triggered.connect(self.close_all_windows)
         
+        # 顯示菜單前，確保字幕窗口在最前
+        if self.subtitle.isVisible():
+            self.subtitle.raise_()
+            self.subtitle.activateWindow()
+        
         menu.exec_(event.globalPos())
+        
+        # 菜單關閉後，再次確保字幕窗口在最前
+        if self.subtitle.isVisible():
+            self.subtitle.raise_()
+            self.subtitle.activateWindow()
     
     def close_all_windows(self):
         """關閉所有窗口"""
