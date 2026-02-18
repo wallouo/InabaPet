@@ -44,14 +44,14 @@ Because the model file is large (~4.7GB), it is not included in the main downloa
 3.  **Import to Ollama**:
     Open PowerShell in the folder where you downloaded the files and run:
     ```powershell
-    ollama create inaba -f Modelfile
+    ollama create meguru -f Modelfile
     ```
-4.  **Verify**: Run `ollama list` to confirm that `inaba` is available.
+4.  **Verify**: Run `ollama list` to confirm that `meguru` is available.
 
 ### Installation & Prerequisites
 
 1.  **Python 3.9.x** or higher is recommended.
-2.  Ensure **Ollama** is running and the `inaba` model is created (see step above).
+2.  Ensure **Ollama** is running and the `meguru` model is created (see step above).
 
 ### 🚀 How to Run
 
@@ -116,14 +116,14 @@ If you are a developer, you can use the following scripts for debugging:
 3.  **匯入 Ollama**：
     在下載檔案的資料夾開啟 PowerShell，執行以下指令：
     ```powershell
-    ollama create inaba -f Modelfile
+    ollama create meguru -f Modelfile
     ```
-4.  **驗證**：執行 `ollama list` 確認列表中有 `inaba` 模型。
+4.  **驗證**：執行 `ollama list` 確認列表中有 `meguru` 模型。
 
 ### 安裝與準備
 
 1.  建議使用 **Python 3.9.x** 或更高版本。
-2.  請確保 **Ollama** 正在運行，並且已建立 `inaba` 模型（見上一步驟）。
+2.  請確保 **Ollama** 正在運行，並且已建立 `meguru` 模型（見上一步驟）。
 
 ### 🚀 啟動方式
 
