@@ -39,17 +39,9 @@ class VisionConnector:
     def __init__(
         self, 
         base_url: str = "http://localhost:11434",
-        model: str = "llava-phi3", # ✅ Updated default
+        model: str = "qwen3-vl-4b", # ✅ Updated default
         timeout: int = 60 # ✅ Increased for larger models
     ):
-        """
-        初始化連接器
-        
-        Args:
-            base_url: Ollama API 地址
-            model: 模型名稱（預設 llava-phi3）
-            timeout: 請求超時時間（秒）
-        """
         self.base_url = base_url.rstrip("/")
         self.model = model
         self.timeout = timeout

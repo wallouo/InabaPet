@@ -184,9 +184,9 @@ class PetWindow(QtWidgets.QLabel):
         
         self._update_head_rect()
 
-        # Initialize Vision System (Llava-Phi3)
-        print("🔧 [Init] Initializing Vision System (Llava-Phi3)...")
-        self.vision_connector = VisionConnector(model="llava-phi3")
+        # Initialize Vision System
+        print("🔧 [Init] Initializing Vision System (qwen3-vl-4b)...")
+        self.vision_connector = VisionConnector(model="qwen3-vl-4b")
         self.screen_monitor = ScreenChangeMonitor(
             MonitorConfig(
                 threshold=0.20,           # Increased to 20% to reduce sensitivity
