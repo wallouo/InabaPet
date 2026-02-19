@@ -21,7 +21,7 @@ This software is currently in the **Early Access / MVP** stage.
 This project integrates multi-modal AI capabilities for richer interactions:
 
 *   **Thinking & Chat Model**: Currently powered by **InabaV1 (Qwen 2.5 7B based)** (via Ollama), with plans to upgrade to **Qwen 3 8B** for better reasoning and role-play capabilities.
-*   **Visual Recognition**: Upcoming integration with **Qwen 3 VL 4B**, allowing Inaba to "see" and react to on-screen content.
+*   **Visual Recognition**: **Qwen 3 VL 4B** allows Inaba to "see" and react to on-screen content.
 *   **Speech Synthesis**: Uses a custom TTS solution (VoiceVox dependency has been removed).
 
 ### Features Overview
@@ -93,7 +93,7 @@ If you are a developer, you can use the following scripts for debugging:
 本專案整合了多模態 AI 能力，以實現更豐富的互動：
 
 *   **思考與對話模型**：目前使用 **InabaV1 (基於 Qwen 2.5 7B)** (Ollama)，計畫升級至 **Qwen 3 8B** 以獲得更強的邏輯與角色扮演能力。
-*   **視覺識別模型**：即將整合 **Qwen 3 VL 4B**，讓 Inaba 能夠「看見」螢幕上的內容並做出反應。
+*   **視覺識別模型**：使用**Qwen 3 VL 4B**，讓 Inaba 能夠「看見」螢幕上的內容並做出反應。
 *   **語音合成**：使用自定義的 TTS 方案 (不再依賴 VoiceVox)。
 
 ### 功能概述
