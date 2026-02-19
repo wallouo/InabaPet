@@ -145,3 +145,8 @@ If you are a developer, you can use the following scripts for debugging:
 
 *   **健康檢查**：運行 `scripts/healthcheck.py` 以檢查 Ollama 服務狀態。
 *   **單元測試**：在根目錄運行 `python -m unittest discover -v` 進行 API 功能測試。
+
+Disclaimer / 版權聲明
+This project is a fan-made application. The character "Inaba Meguru" and related visual assets are the intellectual property of Yuzusoft.
+The code is licensed under the MIT License, but the image assets (assets/character.jpg etc.) are for personal/fan use only and are NOT covered by the MIT License.
+本項目為粉絲同人作品。角色「因幡巡」及相關美術資源版權歸 Yuzusoft (柚子社) 所有。代碼部分採用 MIT 協議，但美術資源僅供個人/粉絲學習使用，嚴禁商用。
