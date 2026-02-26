@@ -91,7 +91,7 @@ The server will start on `http://localhost:23456` by default.
 
 You can test the voice synthesis at:
 ```
-http://localhost:23456/voice/vits?text=Ciallo～&id=88&lang=ja
+http://localhost:23456/voice/vits?text=天気がいいから、散歩しましょう～&id=88&lang=ja
 ```
 
 ### Installation & Prerequisites
@@ -212,7 +212,7 @@ python app.py
 
 你可以在以下網址測試語音合成：
 ```
-http://localhost:23456/voice/vits?text=Ciallo～&id=88&lang=ja
+http://localhost:23456/voice/vits?text=天気がいいから、散歩しましょう～&id=88&lang=ja
 ```
 
 ### 安裝與準備
